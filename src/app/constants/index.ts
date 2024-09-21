@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 import Phone from "../assets/images/phone.png";
 import Thermometer from "../assets/images/themostat.svg";
-import PowerStation from "../assets/images/powerstation.png";
+import PowerStation from "../assets/images/powerStation.png";
 
 type CardDetails = {
   image: StaticImageData;
