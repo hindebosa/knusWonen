@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import Link from "next/link";
 import { StyledText } from "./StyledText";
@@ -12,7 +11,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-lg h-20">
+    <nav className="bg-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -110,7 +109,6 @@ const Navbar: React.FC = () => {
 
       {/* Mobile menu */}
       <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
-        {/* ... existing mobile menu links ... */}
         <Link href="/" className="block py-2 px-4 text-sm hover:bg-gray-200">
           <StyledText bold className="text-text-primary text-lg">
             Ik Huur
@@ -132,18 +130,28 @@ const Navbar: React.FC = () => {
             Over ons
           </StyledText>
         </Link>
-
-        <Link href="/" className="block py-2 px-4 text-sm hover:bg-gray-200">
+        <Link
+          href="/contact"
+          className="block py-2 px-4 text-sm hover:bg-gray-200"
+        >
           <StyledText bold className="text-text-primary text-lg">
             Projecten
           </StyledText>
         </Link>
-        <Link href="/" className="block py-2 px-4 text-sm hover:bg-gray-200">
-          <Image src={Search} alt="Search" width={58} height={58} />
-        </Link>
-        <Link href="/" className="block py-2 px-4 text-sm hover:bg-gray-200">
-          <Image src={User} alt="User" width={58} height={58} />
-        </Link>
+        <div className="py-2 px-4">
+          <button
+            aria-label="Search"
+            className="text-gray-500 hover:text-gray-900 mr-4"
+          >
+            <Image src={Search} alt="Search" width={58} height={58} />
+          </button>
+          <button
+            aria-label="User"
+            className="text-gray-500 hover:text-gray-900"
+          >
+            <Image src={User} alt="User" width={58} height={58} />
+          </button>
+        </div>
       </div>
     </nav>
   );

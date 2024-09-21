@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        overlock: ["Overlock", "serif"],
+      },
       colors: {
         primary: {
           50: "#f0f9ff",
@@ -36,6 +39,16 @@ const config: Config = {
         text: {
           primary: "#39468C",
           secondary: "#fff",
+          tertiary: " #39468C",
+          textBlue: "#35BCE7",
+          textPurple: "#39468C",
+        },
+        button: {
+          primary: "#fff",
+          secondary: "#fff",
+        },
+        section: {
+          primary: "#9AA4D9",
         },
       },
     },
