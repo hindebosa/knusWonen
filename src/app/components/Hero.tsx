@@ -1,10 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
-import HeroBackground from "../app/assets/images/HeroBackground.png";
+import HeroBackground from "../assets/images/HeroBackground.png";
 import Button from "./Button";
-import RepairIcon from "../app/assets/icons/HammerIcon.svg";
-import FileIcon from "../app/assets/icons/file.svg";
-import ChatCircleIcon from "../app/assets/icons/ChatsCircle.svg";
+import RepairIcon from "../assets/icons/HammerIcon.svg";
+import FileIcon from "../assets/icons/file.svg";
+import ChatCircleIcon from "../assets/icons/ChatsCircle.svg";
 
 const HeroComponent = () => {
   return (
