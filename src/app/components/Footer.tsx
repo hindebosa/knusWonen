@@ -1,6 +1,6 @@
 import Image from "next/image";
-import FacebookIcon from "../assets/icons/facebook.svg";
-import LinkedinIcon from "../assets/icons/linkedin.svg";
+import FacebookIcon from "@/app//assets/icons/facebook.svg";
+import LinkedinIcon from "@/app/assets/icons/linkedIn.svg";
 const Footer = () => {
   return (
     <div className="bg-section-sectionGrey">
