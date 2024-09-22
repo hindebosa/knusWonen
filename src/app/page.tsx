@@ -1,9 +1,9 @@
 // import Footer from "@/components/Footer";
-import HeroComponent from "@/components/Hero";
-import LatestNews from "@/components/LatestNews";
+import HeroComponent from "@/app/components/Hero";
+import LatestNews from "@/app/components/LatestNews";
 // import Newsletter from "@/components/Newsletter";
 // import Privacy from "@/components/Privacy";
-import WeComponent from "@/components/Wecomponent";
+import WeComponent from "@/app/components/Wecomponent";
 
 export default function Home() {
   return (
