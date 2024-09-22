@@ -3,26 +3,46 @@ import FacebookIcon from "../assets/icons/facebook.svg";
 import LinkedinIcon from "../assets/icons/linkedin.svg";
 const Footer = () => {
   return (
-    <div className="flex flex-row justify-between">
-      <div>
-        <p>Bel of mail ons</p>
-        <p>012 - 345 67 89</p>
-        <p>klantenservice@knuswonen.nu</p>
-      </div>
-      <div>
-        <p>Openingstijden</p>
-        <p>Maandag t/m donderdag van 8:30 tot 16:30 uur.</p>
-        <p> Vrijdag van 8:30 tot 12:00 uur</p>
-      </div>
-      <div>
-        <p>Kom langs op afspraak</p>
+    <div className="bg-section-sectionGrey">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className=" mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl py-20">
+          <div>
+            <p className=" text-[20px] text-text-textGrey font-overlock font-bold">
+              Bel of mail ons
+            </p>
+            <p className="font-normal text-[16px] text-text-textGrey mt-2">
+              012 - 345 67 89
+            </p>
+            <p>klantenservice@knuswonen.nu</p>
+          </div>
+          <div>
+            <p className="text-[20px] text-text-textGrey font-overlock font-bold">
+              Openingstijden
+            </p>
+            <p className="font-normal text-[16px] text-text-textGrey mt-2">
+              Maandag t/m donderdag van 8:30 tot <br></br>16:30 uur.
+            </p>
+            <p> Vrijdag van 8:30 tot 12:00 uur</p>
+          </div>
+          <div>
+            <p className=" text-[20px] text-text-textGrey font-overlock font-bold">
+              Kom langs op afspraak
+            </p>
 
-        <p>1234 AB Dorpstad</p>
-      </div>
-      <div>
-        <p>Volg ons op onze sociale kanalen</p>
-        <Image src={FacebookIcon} alt="location" width={20} height={20} />
-        <Image src={LinkedinIcon} alt="location" width={20} height={20} />
+            <p className="font-normal text-[16px] text-text-textGrey mt-2">
+              1234 AB Dorpstad
+            </p>
+          </div>
+          <div>
+            <p className=" text-[20px] text-text-textGrey font-overlock font-bold">
+              Volg ons op onze sociale kanalen
+            </p>
+            <div className=" flex mt-3">
+              <Image src={FacebookIcon} alt="location" width={26} height={30} />
+              <Image src={LinkedinIcon} alt="location" width={26} height={30} />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

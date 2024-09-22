@@ -43,6 +43,8 @@ const config: Config = {
           textBlue: "#35BCE7",
           textPurple: "#39468C",
           dateGrey: "#999999",
+          textOrange: "#FF6B38",
+          textGrey: " #1E1E1E",
         },
         button: {
           primary: "#fff",
@@ -50,6 +52,7 @@ const config: Config = {
         },
         section: {
           primary: "#9AA4D9",
+          sectionGrey: "#F5F5F5",
         },
       },
     },

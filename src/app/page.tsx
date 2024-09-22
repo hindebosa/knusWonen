@@ -4,6 +4,9 @@ import LatestNews from "@/app/components/LatestNews";
 // import Newsletter from "@/components/Newsletter";
 // import Privacy from "@/components/Privacy";
 import WeComponent from "@/app/components/Wecomponent";
+import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
+import Privacy from "./components/Privacy";
 
 export default function Home() {
   return (
@@ -11,9 +14,9 @@ export default function Home() {
       <HeroComponent />
       <WeComponent />
       <LatestNews />
-      {/* <Newsletter />
+      <Newsletter />
       <Footer />
-      <Privacy /> */}
+      <Privacy />
     </>
   );
 }
