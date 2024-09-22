@@ -4,6 +4,7 @@ import Thermometer from "../assets/images/themostat.svg";
 import PowerStation from "../assets/images/powerStation.png";
 
 type CardDetails = {
+  id: number;
   image: StaticImageData;
   alt: string;
   heading: string;
@@ -13,6 +14,7 @@ type CardDetails = {
 
 const cardDetails: CardDetails[] = [
   {
+    id: 1,
     image: Phone,
     alt: "Phone",
     date: "5 MAART 2024",
@@ -20,6 +22,7 @@ const cardDetails: CardDetails[] = [
     paragraph: "Update: Telefoonstoring verholpen",
   },
   {
+    id: 2,
     image: Thermometer,
     alt: "thermometer",
     date: "17 februari 2024",
@@ -27,6 +30,7 @@ const cardDetails: CardDetails[] = [
     paragraph: "KnusWonen werkt hard aan het energiezuiniger maken van ...",
   },
   {
+    id: 3,
     image: PowerStation,
     alt: "powerstation",
     date: "5 MAART 2024",

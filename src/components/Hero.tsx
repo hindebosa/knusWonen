@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import HeroBackground from "../app/assets/images/HeroBackground.png";
 import Button from "./Button";
 import RepairIcon from "../app/assets/icons/HammerIcon.svg";

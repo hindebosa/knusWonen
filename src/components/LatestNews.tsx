@@ -1,5 +1,4 @@
 import Card from "./Card";
-import { StyledText } from "./StyledText";
 import { cardDetails } from "@/app/constants";
 
 const LatestNews = () => {
@@ -15,6 +14,7 @@ const LatestNews = () => {
         <div className="flex flex-wrap justify-center gap-4">
           {cardDetails.map((card) => (
             <Card
+              key={card.id}
               className="flex flex-col h-[388px] w-[288px]"
               image={card.image}
               alt={card.alt}
