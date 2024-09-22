@@ -1,4 +1,8 @@
+import Link from "next/link";
 import Card from "./Card";
+import Image from "next/image";
+
+import ForwardArrow from "../assets/icons/forwardArrow.svg";
 import { cardDetails } from "@/app/constants";
 
 const LatestNews = () => {
@@ -10,18 +14,30 @@ const LatestNews = () => {
             Laatste nieuws
           </p>
         </div>
-
-        <div className="flex flex-wrap justify-center gap-4">
-          {cardDetails.map((card) => (
-            <Card
-              key={card.id}
-              className="flex flex-col h-[388px] w-[288px]"
-              image={card.image}
-              alt={card.alt}
-              heading={card.heading}
-              paragraph={card.paragraph}
-            />
-          ))}
+        <div className="container mx-auto px-1 py-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {cardDetails.map((card) => (
+              <Card
+                date={card.date}
+                key={card.id}
+                className="flex flex-col"
+                image={card.image}
+                alt={card.alt}
+                heading={card.heading}
+                paragraph={card.paragraph}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="flex justify-end pb-10">
+          <div className="flex gap-1">
+            <Link href="#" className="">
+              <h1 className="text-text-textPurple text-[14px]  font-medium">
+                Bekijk alle nieuwsberichten
+              </h1>
+            </Link>
+            <Image src={ForwardArrow} alt="arrow" />
+          </div>
         </div>
       </div>
     </div>
