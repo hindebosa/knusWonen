@@ -20,24 +20,26 @@ const Card: React.FC<CardProps> = ({
   date,
 }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-      <div className="relative h-48 sm:h-56 md:h-64">
-        <Image src={image} alt={alt} layout="fill" objectFit="cover" />
+    <div className="bg-white shadow-lg rounded-[14px] overflow-hidden flex flex-col h-full">
+      <div className="relative">
+        <Image src={image} alt={alt} objectFit="cover" className="w-full" />
       </div>
-      <div className="p-4">
-        <h2 className="text-text-dateGrey text-[11px] font-semiBold">
-          {date.toUpperCase()}
-        </h2>
-        <h2 className="text-[20px] font-bold mb-2 text-text-textPurple font-overlock">
-          {heading}
-        </h2>
-        <p className="text-text-textPurple text-[14px] font-overlock font-normal w-[280px]">
-          {paragraph}
-        </p>
-        <div className="flex justify-end">
-          <div className="flex items-center gap-1">
+      <div className="p-4 flex flex-col flex-grow">
+        <div>
+          <h2 className="text-text-dateGrey text-[11px] font-semiBold">
+            {date.toUpperCase()}
+          </h2>
+          <h2 className="text-[20px] font-bold mb-2 text-text-textPurple font-overlock">
+            {heading}
+          </h2>
+          <p className="text-text-textPurple text-[14px] font-overlock font-normal">
+            {paragraph}
+          </p>
+        </div>
+        <div className="mt-auto pt-4">
+          <div className="flex items-center justify-end gap-1">
             <Link href="#" className="">
-              <h1 className="text-text-textPurple text-[14px]  font-normal">
+              <h1 className="text-text-textPurple text-[14px] font-normal">
                 Less meer
               </h1>
             </Link>

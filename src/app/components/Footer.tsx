@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="bg-section-sectionGrey">
       <div className="max-w-7xl mx-auto px-4">
-        <div className=" mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl py-20">
+        <div className=" mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl py-16">
           <div>
             <p className=" text-[20px] text-text-textGrey font-overlock font-bold">
               Bel of mail ons
