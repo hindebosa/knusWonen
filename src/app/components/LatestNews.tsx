@@ -8,14 +8,14 @@ import { cardDetails } from "@/app/constants";
 const LatestNews = () => {
   return (
     <div className="bg-section-primary">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="mt-[10px]">
-          <p className="text-text-textPurple text-[32px] font-overlock font-bold text-left pt-10 pb-5">
+      <div className="max-w-5xl mx-auto px-4">
+        <div>
+          <p className="text-text-textPurple text-[32px] font-overlock font-bold text-left pt-5 ">
             Laatste nieuws
           </p>
         </div>
-        <div className="container mx-auto px-1 py-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="container mx-auto px-1 py-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {cardDetails.map((card) => (
               <Card
                 date={card.date}

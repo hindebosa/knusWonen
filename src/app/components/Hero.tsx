@@ -17,8 +17,8 @@ const HeroComponent = () => {
       />
       <div className="mx-auto ">
         <div className="px-6 mx-auto z-10 relative flex-grow">
-          <div className="text-white text-start">
-            <p className="text-white text-2xl text-[24px] mb-4">
+          <div className="text-white ">
+            <p className="text-white text-2xl text-[24px] mb-4 sm:text-center lg:text-start xs:text-start">
               Waarmee kunnen we je helpen?
             </p>
           </div>

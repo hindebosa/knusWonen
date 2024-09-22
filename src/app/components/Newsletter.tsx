@@ -8,7 +8,7 @@ const Newsletter = () => {
     "bg-gradient-to-r from-[#FF6B38] to-[#FFD201] hover:from-[#aed06f] hover:to-[#2faad3]";
 
   return (
-    <div className="flex flex-col md:flex-row justify-between max-w-7xl mx-auto mt-10 px-4 md:px-0">
+    <div className="flex flex-col md:flex-row justify-between max-w-5xl mx-auto mt-10 px-4 md:pr-10  mb-7 md:mb-10 ">
       <div className="md:w-1/2">
         <h1 className="font-overlock text-[34px] text-text-textOrange font-bold">
           Schrijf je in voor onze nieuwsbrief
@@ -38,30 +38,13 @@ const Newsletter = () => {
         </div>
       </div>
       <div className="md:w-1/2 relative p-1">
-        <div className="flex justify-center items-center p-2">
-          <div className="relative w-full w-full min-w-[270px] max-w-[500px] aspect-square">
-            <div
-              className="absolute inset-0  transform 
-                     translate-x-[70%] translate-y-[40%] 
-                     sm:translate-x-[80%] sm:translate-y-[61%] 
-                     md:translate-x-[80%] md:translate-y-[61%] 
-                     z-0"
-            >
-              <Image
-                src={Blob}
-                alt="blob"
-                objectFit="cover"
-                className="rounded-lg"
-              />
+        <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto p-4">
+          <div className="relative ">
+            <div className="absolute -bottom-5 -right-6 sm:-bottom-6 sm:-right-6 md:-bottom-[68px] md:-right-[68px] w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48">
+              <Image src={Blob} alt="blob" objectFit="cover" />
             </div>
-            <div className="relative z-10 w-full h-full">
-              <Image
-                src={NewsletterImage}
-                alt="Sample image"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
-              />
+            <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 rounded-lg overflow-hidden ">
+              <Image src={NewsletterImage} alt="Main image" objectFit="cover" />
             </div>
           </div>
         </div>

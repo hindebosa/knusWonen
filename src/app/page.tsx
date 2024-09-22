@@ -7,6 +7,7 @@ import WeComponent from "@/app/components/Wecomponent";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
 import Privacy from "./components/Privacy";
+import Layout from "./components/Layout";
 
 export default function Home() {
   return (

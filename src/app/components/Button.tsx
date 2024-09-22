@@ -18,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({
   gradient,
 }) => {
   const baseClasses =
-    "inline-flex  xs:items-center xs:justify-center p-3  text-xl font-medium rounded-md shadow-sm bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500";
+    "inline-flex  xs:items-center xs:justify-center p-2  text-xl font-medium rounded-md shadow-sm bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500";
   const gradientClass = gradient || "";
   const combinedClasses = `${baseClasses} ${gradientClass} ${className || ""}`;
 
