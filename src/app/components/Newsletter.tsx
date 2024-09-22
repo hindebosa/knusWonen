@@ -1,5 +1,5 @@
-import ClusterHoues from "../app/assets/images/cluster.png";
-import Blob from "../app/assets/images/blob.svg";
+import ClusterHoues from "../assets/images/cluster.png";
+import Blob from "../assets/images/blob.svg";
 import Image from "next/image";
 import { StyledText } from "./StyledText";
 

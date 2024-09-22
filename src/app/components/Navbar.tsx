@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { StyledText } from "./StyledText";
 import Image from "next/image";
-import Logo from "../app/assets/icons/logo.svg";
-import Search from "../app/assets/icons/search.svg";
-import User from "../app/assets/icons/user.svg";
+import Logo from "../assets/icons/logo.svg";
+import Search from "../assets/icons/search.svg";
+import User from "../assets/icons/user.svg";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
