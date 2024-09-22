@@ -42,6 +42,7 @@ const config: Config = {
           tertiary: " #39468C",
           textBlue: "#35BCE7",
           textPurple: "#39468C",
+          dateGrey: "#999999",
         },
         button: {
           primary: "#fff",

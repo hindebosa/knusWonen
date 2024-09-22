@@ -1,11 +1,14 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import ForwardArrow from "../assets/icons/forwardArrow.svg";
+import Link from "next/link";
 
 interface CardProps {
   image: StaticImageData;
   alt: string;
   heading: string;
   paragraph: string;
+  date: string;
   className?: string;
 }
 
@@ -14,22 +17,33 @@ const Card: React.FC<CardProps> = ({
   alt,
   heading,
   paragraph,
-  className,
+  date,
 }) => {
-  const baseClasses =
-    "bg-white rounded-lg shadow-md overflow-hidden flex flex-col w-full max-w-[288px] sm:max-w-[calc(50%-0.5rem)] lg:max-w-[calc(33.333%-0.667rem)]";
-  const combinedClasses = className
-    ? `${baseClasses} ${className}`
-    : baseClasses;
-
   return (
-    <div className={combinedClasses}>
-      <div className="relative h-48 w-full">
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+      <div className="relative h-48 sm:h-56 md:h-64">
         <Image src={image} alt={alt} layout="fill" objectFit="cover" />
       </div>
       <div className="p-4">
-        <h2 className="text-xl font-semibold mb-2">{heading}</h2>
-        <p className="text-gray-600">{paragraph}</p>
+        <h2 className="text-text-dateGrey text-[11px] font-semiBold">
+          {date.toUpperCase()}
+        </h2>
+        <h2 className="text-[20px] font-bold mb-2 text-text-textPurple font-overlock">
+          {heading}
+        </h2>
+        <p className="text-text-textPurple text-[14px] font-overlock font-normal w-[280px]">
+          {paragraph}
+        </p>
+        <div className="flex justify-end">
+          <div className="flex items-center gap-1">
+            <Link href="#" className="">
+              <h1 className="text-text-textPurple text-[14px]  font-normal">
+                Less meer
+              </h1>
+            </Link>
+            <Image src={ForwardArrow} alt="arrow" />
+          </div>
+        </div>
       </div>
     </div>
   );
