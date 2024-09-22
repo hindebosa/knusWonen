@@ -52,7 +52,7 @@ const config: Config = {
         },
         section: {
           primary: "#9AA4D9",
-          sectionGrey: "#F5F5F5",
+          sectionGrey: "#E5E5E5",
         },
       },
     },

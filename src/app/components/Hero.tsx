@@ -7,7 +7,7 @@ import ChatCircleIcon from "../assets/icons/ChatsCircle.svg";
 
 const HeroComponent = () => {
   return (
-    <div className="relative h-[65vh] flex items-end">
+    <div className="relative h-[80vh] flex items-end">
       <Image
         src={HeroBackground}
         alt="Hero Background"
@@ -27,7 +27,7 @@ const HeroComponent = () => {
         <div className="container mx-auto px-6 z-10 relative pb-8">
           <div className="flex flex-wrap gap-4 justify-center ">
             <Button
-              className="text-text-tertiary text-[18px] w-[288px]"
+              className="text-text-tertiary text-[18px] w-[288px] py-4"
               href="/get-started"
               icon={RepairIcon}
             >
@@ -35,14 +35,14 @@ const HeroComponent = () => {
             </Button>
 
             <Button
-              className=" text-text-tertiary w-[288px]"
+              className=" text-text-tertiary w-[288px] py-4"
               href="/get-started"
               icon={FileIcon}
             >
               Huur betalen
             </Button>
             <Button
-              className=" text-text-tertiary w-[288px] text-[18px] font-bold"
+              className=" text-text-tertiary w-[288px] text-[18px] font-bold py-4"
               href="/contact"
               icon={ChatCircleIcon}
             >
