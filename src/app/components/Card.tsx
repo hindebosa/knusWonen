@@ -26,20 +26,20 @@ const Card: React.FC<CardProps> = ({
       </div>
       <div className="p-4 flex flex-col flex-grow">
         <div>
-          <h2 className="text-text-dateGrey text-[11px] font-semiBold">
+          <h2 className="text-text-grey text-[11px] font-semiBold">
             {date.toUpperCase()}
           </h2>
-          <h2 className="text-[20px] font-bold mb-2 text-text-textPurple font-overlock">
+          <h2 className="text-[20px] font-bold mb-2 text-text-purple font-overlock">
             {heading}
           </h2>
-          <p className="text-text-textPurple text-[14px] font-overlock font-normal">
+          <p className="text-text-purple text-[14px] font-overlock font-normal">
             {paragraph}
           </p>
         </div>
         <div className="mt-auto pt-4">
           <div className="flex items-center justify-end gap-1">
             <Link href="#" className="">
-              <h1 className="text-text-textPurple text-[14px] font-normal">
+              <h1 className="text-text-purple text-[14px] font-normal">
                 Less meer
               </h1>
             </Link>

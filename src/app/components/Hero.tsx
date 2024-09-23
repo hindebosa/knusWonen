@@ -17,8 +17,8 @@ const HeroComponent = () => {
       />
       <div className="mx-auto ">
         <div className="px-6 mx-auto z-10 relative flex-grow">
-          <div className="text-white ">
-            <p className="text-white text-2xl text-[24px] mb-4 sm:text-center lg:text-start xs:text-start">
+          <div className="text-white  text-center sm:text-center lg:text-start xs:text-center">
+            <p className="text-white text-2xl text-[24px] mb-4 ">
               Waarmee kunnen we je helpen?
             </p>
           </div>
@@ -28,7 +28,7 @@ const HeroComponent = () => {
           <div className="flex flex-wrap gap-4 justify-center ">
             <Button
               className="text-text-tertiary text-[18px] w-[288px] py-4"
-              href="/get-started"
+              href="/#"
               icon={RepairIcon}
             >
               Reparatie melden
@@ -36,14 +36,14 @@ const HeroComponent = () => {
 
             <Button
               className=" text-text-tertiary w-[288px] py-4"
-              href="/get-started"
+              href="/#"
               icon={FileIcon}
             >
               Huur betalen
             </Button>
             <Button
               className=" text-text-tertiary w-[288px] text-[18px] font-bold py-4"
-              href="/contact"
+              href="/#"
               icon={ChatCircleIcon}
             >
               Contact

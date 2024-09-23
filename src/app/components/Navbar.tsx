@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { StyledText } from "./StyledText";
 import Image from "next/image";
 import Logo from "../assets/icons/logo.svg";
 import Search from "../assets/icons/search.svg";
@@ -27,33 +26,25 @@ const Navbar: React.FC = () => {
               href="/"
               className="py-4 px-2 text-gray-500 hover:text-gray-900 transition duration-300"
             >
-              <StyledText bold className="text-text-primary text-lg">
-                Ik Huur
-              </StyledText>
+              <h1 className="text-text-primary text-lg font-bold">Ik Huur</h1>
             </Link>
             <Link
               href="/about"
               className="py-4 px-2 text-gray-500 hover:text-gray-900 transition duration-300"
             >
-              <StyledText bold className="text-text-primary text-lg">
-                Ik zoek
-              </StyledText>
+              <h1 className="text-text-primary text-lg font-bold">Ik zoek</h1>
             </Link>
             <Link
               href="/services"
               className="py-4 px-2 text-gray-500 hover:text-gray-900 transition duration-300"
             >
-              <StyledText bold className="text-text-primary text-lg">
-                Over ons
-              </StyledText>
+              <h1 className="text-text-primary text-lg font-bold">Over ons</h1>
             </Link>
             <Link
               href="/contact"
               className="py-4 px-2 text-gray-500 hover:text-gray-900 transition duration-300"
             >
-              <StyledText bold className="text-text-primary text-lg">
-                Projecten
-              </StyledText>
+              <h1 className="text-text-primary text-lg font-bold">Projecten</h1>
             </Link>
           </div>
 
@@ -110,33 +101,25 @@ const Navbar: React.FC = () => {
       {/* Mobile menu */}
       <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
         <Link href="/" className="block py-2 px-4 text-sm hover:bg-gray-200">
-          <StyledText bold className="text-text-primary text-lg">
-            Ik Huur
-          </StyledText>
+          <h1 className="text-text-primary text-lg font-bold">Ik Huur</h1>
         </Link>
         <Link
           href="/about"
           className="block py-2 px-4 text-sm hover:bg-gray-200"
         >
-          <StyledText bold className="text-text-primary text-lg">
-            Ik zoek
-          </StyledText>
+          <h1 className="text-text-primary text-lg font-bold">Ik zoek</h1>
         </Link>
         <Link
           href="/services"
           className="block py-2 px-4 text-sm hover:bg-gray-200"
         >
-          <StyledText bold className="text-text-primary text-lg">
-            Over ons
-          </StyledText>
+          <h1 className="text-text-primary text-lg font-bold">Over ons</h1>
         </Link>
         <Link
           href="/contact"
           className="block py-2 px-4 text-sm hover:bg-gray-200"
         >
-          <StyledText bold className="text-text-primary text-lg">
-            Projecten
-          </StyledText>
+          <h1 className="text-text-primary text-lg font-bold">Projecten</h1>
         </Link>
         <div className="py-2 px-4">
           <button
