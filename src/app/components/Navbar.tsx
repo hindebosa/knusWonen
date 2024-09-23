@@ -5,6 +5,7 @@ import Image from "next/image";
 import Logo from "../assets/icons/logo.svg";
 import Search from "../assets/icons/search.svg";
 import User from "../assets/icons/user.svg";
+import { navLinks } from "../constants";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,30 +23,15 @@ const Navbar: React.FC = () => {
 
           {/* Navigation Links (centered) */}
           <div className="hidden md:flex items-center justify-center flex-grow">
-            <Link
-              href="/"
-              className="py-4 px-2 text-gray-500 hover:text-gray-900 transition duration-300"
-            >
-              <h1 className="text-text-primary text-lg font-bold">Ik Huur</h1>
-            </Link>
-            <Link
-              href="/about"
-              className="py-4 px-2 text-gray-500 hover:text-gray-900 transition duration-300"
-            >
-              <h1 className="text-text-primary text-lg font-bold">Ik zoek</h1>
-            </Link>
-            <Link
-              href="/services"
-              className="py-4 px-2 text-gray-500 hover:text-gray-900 transition duration-300"
-            >
-              <h1 className="text-text-primary text-lg font-bold">Over ons</h1>
-            </Link>
-            <Link
-              href="/contact"
-              className="py-4 px-2 text-gray-500 hover:text-gray-900 transition duration-300"
-            >
-              <h1 className="text-text-primary text-lg font-bold">Projecten</h1>
-            </Link>
+            {navLinks.map(({ id, name, href }) => (
+              <Link
+                href={href}
+                className="py-4 px-2 text-gray-500 hover:text-gray-900 transition duration-300"
+                key={id}
+              >
+                <h1 className="text-text-primary text-lg font-bold">{name}</h1>
+              </Link>
+            ))}
           </div>
 
           {/* User and Search Icons */}
@@ -100,27 +86,16 @@ const Navbar: React.FC = () => {
 
       {/* Mobile menu */}
       <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
-        <Link href="/" className="block py-2 px-4 text-sm hover:bg-gray-200">
-          <h1 className="text-text-primary text-lg font-bold">Ik Huur</h1>
-        </Link>
-        <Link
-          href="/about"
-          className="block py-2 px-4 text-sm hover:bg-gray-200"
-        >
-          <h1 className="text-text-primary text-lg font-bold">Ik zoek</h1>
-        </Link>
-        <Link
-          href="/services"
-          className="block py-2 px-4 text-sm hover:bg-gray-200"
-        >
-          <h1 className="text-text-primary text-lg font-bold">Over ons</h1>
-        </Link>
-        <Link
-          href="/contact"
-          className="block py-2 px-4 text-sm hover:bg-gray-200"
-        >
-          <h1 className="text-text-primary text-lg font-bold">Projecten</h1>
-        </Link>
+        {navLinks.map(({ id, name, href }) => (
+          <Link
+            href={href}
+            className="block py-2 px-4 text-sm hover:bg-gray-200"
+            key={id}
+          >
+            <h1 className="text-text-primary text-lg font-bold">{name}</h1>
+          </Link>
+        ))}
+
         <div className="py-2 px-4">
           <button
             aria-label="Search"
