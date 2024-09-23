@@ -39,4 +39,27 @@ const cardDetails: CardDetails[] = [
   },
 ];
 
-export { cardDetails };
+const navLinks = [
+  {
+    id: 1,
+    name: "Ik Huur",
+    href: "/#",
+  },
+  {
+    id: 2,
+    name: "Ik zoek",
+    href: "/#",
+  },
+  {
+    id: 3,
+    name: "Over ons",
+    href: "/#",
+  },
+  {
+    id: 4,
+    name: "Projecten",
+    href: "/#",
+  },
+];
+
+export { cardDetails, navLinks };
