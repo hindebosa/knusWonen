@@ -3,7 +3,7 @@ import FacebookIcon from "@/app//assets/icons/facebook.svg";
 import LinkedinIcon from "@/app/assets/icons/linkedIn.svg";
 const Footer = () => {
   return (
-    <div className="bg-section-sectionGrey">
+    <div className="bg-section-grey">
       <div className="max-w-7xl mx-auto px-4">
         <div className=" mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl py-16">
           <div>

@@ -8,7 +8,7 @@ const WeComponent = () => {
     "bg-gradient-to-r from-[#BFE27D] to-[#35BCE7] hover:from-[#aed06f] hover:to-[#2faad3]";
 
   return (
-    <div className="flex flex-col md:flex-row justify-between max-w-5xl mx-auto mt-10 px-4 md:px-0">
+    <div className="flex flex-col md:flex-row justify-between max-w-5xl mx-auto mt-10 mb-[-2%] px-4 md:px-0">
       <div className=" md:w-1/2 relative p-1">
         <div className="flex justify-center items-center p-2">
           <div className="relative w-full w-full min-w-[270px] max-w-[500px] aspect-square">
@@ -35,7 +35,7 @@ const WeComponent = () => {
         </div>
       </div>
       <div className=" md:w-1/2">
-        <p className="font-overlock text-text-textBlue text-[32px] font-bold text-center md:text-left mb-7">
+        <p className="font-overlock text-text-blue text-[32px] font-bold text-center md:text-left mb-7">
           We verbeteren onze woningen
         </p>
         <p className="text-[16px] font-normal leading-[24px] text-center md:text-left">

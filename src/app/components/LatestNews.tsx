@@ -10,7 +10,7 @@ const LatestNews = () => {
     <div className="bg-section-primary">
       <div className="max-w-5xl mx-auto px-4">
         <div>
-          <p className="text-text-textPurple text-[32px] font-overlock font-bold text-left pt-5 ">
+          <p className="text-text-purple text-[32px] font-overlock font-bold text-left pt-5 ">
             Laatste nieuws
           </p>
         </div>
@@ -32,7 +32,7 @@ const LatestNews = () => {
         <div className="flex justify-end pb-10">
           <div className="flex gap-1">
             <Link href="#" className="">
-              <h1 className="text-text-textPurple text-[14px]  font-medium">
+              <h1 className="text-text-purple text-[14px]  font-medium">
                 Bekijk alle nieuwsberichten
               </h1>
             </Link>
